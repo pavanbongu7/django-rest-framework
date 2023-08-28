@@ -6,5 +6,5 @@ from .serializers import HelloWorldSerializer
 
 class HelloWorldView(APIView):
     def get(self, request, format=None):
-        serializer = HelloWorldSerializer()
-        return Response(serializer.data)
+        # serializer = HelloWorldSerializer()
+        return Response({"data": "hello world new"})
